@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Focus Monitor</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">YOUR WORKDAY, IN FOCUS</div>
+        <h1>Focus Monitor</h1>
+      </header>
+
+      <section class="focus-card" aria-labelledby="focus-heading">
+        <div class="section-label" id="focus-heading">FOCUS SESSION</div>
+        <div class="timer" id="timer" aria-live="polite">25:00</div>
+        <p id="focus-status">Take 25 minutes to focus on what matters.</p>
+        <button id="focus-button" type="button">Start focus session</button>
+      </section>
+
+      <section class="activity" aria-labelledby="activity-heading">
+        <div class="activity-heading">
+          <div>
+            <div class="section-label">LOCAL ACTIVITY</div>
+            <h2 id="activity-heading">Today on the web</h2>
+          </div>
+          <div class="total" id="total-time">0 min</div>
+        </div>
+        <ul id="site-list" aria-label="Time spent on websites today"></ul>
+        <p class="empty" id="empty-state">Your website activity will appear here.</p>
+      </section>
+      <footer>Website time stays on this device.</footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
